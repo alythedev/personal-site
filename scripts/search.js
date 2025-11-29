@@ -11,7 +11,7 @@ const pages = {
   "projects": "projects.html",
   "gallery": "gallery.html",
   "blog": "blog.html",
-  "secret": "personal-site\popup-pages\secret.html"
+  "secret": "../popup-pages/secret.html"
 };
 
 // Show filtered suggestions
