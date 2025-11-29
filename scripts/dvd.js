@@ -9,13 +9,35 @@ let animationId = null;
 function init() {
 }
 
-// change the colour of the dvd logo
+// function handle_collision() {
+//     const dvd_height = dvd.offsetHeight;
+//     const dvd_width = dvd.offsetWidth;
+//     const dvd_top = dvd.offsetTop;
+//     const dvd_left = dvd.offsetLeft;
+//     const win_height = window.innerHeight;
+//     const win_width = window.innerWidth;
+
+//     if (dvd_left <= 0 || dvd_left + dvd_width >= win_width) {
+//         // reverse x_incr
+//         x_incr = -x_incr;
+//         dvd.style.fill = randomColor();
+//     }
+
+//     if (dvd_top <= 0 || dvd_top + dvd_height >= win_height) {
+//         // reverse y_incr
+//         y_incr = -y_incr;
+//         dvd.style.fill = randomColor();
+//     }
+// }
+
 function handle_collision() {
     const dvd_height = dvd.offsetHeight;
     const dvd_width = dvd.offsetWidth;
     const dvd_top = dvd.offsetTop;
     const dvd_left = dvd.offsetLeft;
-    const win_height = window.innerHeight;
+
+    // Use document.documentElement.clientHeight for more reliable mobile height
+    const win_height = document.documentElement.clientHeight; 
     const win_width = window.innerWidth;
 
     if (dvd_left <= 0 || dvd_left + dvd_width >= win_width) {
@@ -24,8 +46,13 @@ function handle_collision() {
         dvd.style.fill = randomColor();
     }
 
-    if (dvd_top <= 0 || dvd_top + dvd_height >= win_height) {
-        // reverse y_incr
+    // Check for top boundary
+    if (dvd_top <= 0) {
+        y_incr = -y_incr;
+        dvd.style.fill = randomColor();
+    } 
+    // Check for bottom boundary (using the more reliable win_height)
+    else if (dvd_top + dvd_height >= win_height) {
         y_incr = -y_incr;
         dvd.style.fill = randomColor();
     }
@@ -57,8 +84,8 @@ function startDVD() {
     dvd.style.display = 'block';
     dvd.style.fill = randomColor();
     dvd.style.position = 'fixed';
-    dvd.style.top = '1px';   
-    dvd.style.left = '1px';
+    dvd.style.top = '5px';   
+    dvd.style.left = '5px';
     dvd.style.pointerEvents = 'none';
     animate();
 }
