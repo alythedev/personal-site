@@ -1,0 +1,204 @@
+div.home {
+    width: 90%;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: Garamond, "Garamond Premier Pro", "Apple Garamond", Georgia, serif;
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #7900a7;
+    line-height: 1;
+    cursor: help;
+}
+
+.title {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#car_image {
+    padding-top: 50px;
+    user-select: none;
+
+}
+
+body {
+    padding-top: 30px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#search {
+    
+  padding: 3px;
+  font-size: 13px;
+  width: 300px;
+
+}
+
+#search-btn {
+    
+  padding: 3px 12px;
+  font-size: 13px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-top: 40px;     
+  margin-left: 0px;
+  transform: translateX(-50%); /* shift left by 50% of its width to center */
+  width: 150px;       /* adjust as needed */
+  background: white;
+  border: 1px solid #ccc;
+  display: none;    /* hidden by default */
+  z-index: 10;
+  text-align: left; /* keep text inside suggestions left-aligned */
+  border-radius: 6px;
+}
+
+#suggestions::before{
+    content: '';
+    position: absolute;
+    top: -16.5px;
+    left: 10px;
+    border: 8px solid transparent;
+    border-bottom-color: #D3D3D3		;
+}
+
+#suggestions::after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    
+}
+
+/* Each suggestion */
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+  
+}
+
+#suggestions li:hover {
+  background-color: #f0f0f0;
+  padding: 8px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@keyframes fontRotate {
+  0%   { font-family: 'Courier New', sans-serif; }
+  20%  { font-family: 'Open Sans', sans-serif; }
+  40%  { font-family: 'Lobster', cursive; }
+  60%  { font-family: 'Inter', sans-serif; }
+  80%  { font-family: 'Roboto', sans-serif; }
+  100% { font-family: 'Courier New', sans-serif; }
+}
+
+.title-font:hover {
+  animation: fontRotate 1s infinite;
+}
+
+.home-bottom {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.home-bottom div {
+font-family: 'Times New Roman', Times, serif;
+    color: #7900a7;
+
+  width: auto;
+  margin-top: 10px;
+  padding: 7px;
+  text-align: center;  
+  font-size: 13px;
+}
+
+.the88x31s {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+
+
+}
+
+.the88x31s div {
+
+  width: auto;
+  margin-top: 10%;
+  padding: 3px;
+  user-select: none;
+
+
+}
+
+.link {
+    font-family: 'Times New Roman', Times, serif;
+    color: #7900a7;
+    font-size: 14px;
+    text-decoration: none;
+    
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#surprise {
+font-family: 'Times New Roman', Times, serif;
+    color: #7900a7;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-style: italic;
+    cursor: help;
+
+
+}
+
+#toggleDVD {
+  cursor: pointer;
+
+  accent-color: #7900a7;
+}
+
+div.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  border: 2px solid red;
+
+}
