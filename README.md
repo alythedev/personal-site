@@ -4,9 +4,24 @@ Hey! Welcome to my little corner of the internet, made for Hack Club's [personal
 
 This website is a personal website inspired by old-internet-themed search engines like [Wiby.me](https://wiby.me/), and serves as a break from today's overly polished and modern web design.
 
-<img width="1919" height="854" alt="Screenshot 2025-11-30 191131" src="https://github.com/user-attachments/assets/4bbec566-ab5c-4fd4-b5f9-62b463ee9714" />
-<img width="455" alt="Screenshot 2025-11-30 191254" src="https://github.com/user-attachments/assets/c9fd2cef-ace2-416f-bbbc-0592c373b411" />
-<img width="455" alt="Screenshot 2025-11-30 191145" src="https://github.com/user-attachments/assets/c75a4129-f022-45ad-abf1-79898339b334" />
+
+<table width="100%">
+  <tr>
+    <img alt="Screenshot 2025-11-30 191131" src="https://github.com/user-attachments/assets/4bbec566-ab5c-4fd4-b5f9-62b463ee9714" />
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <img alt="Screenshot 2025-11-30 191254" src="https://github.com/user-attachments/assets/c9fd2cef-ace2-416f-bbbc-0592c373b411" />
+    </td>
+    <td width="50%">
+      <img alt="Screenshot 2025-11-30 191145" src="https://github.com/user-attachments/assets/c75a4129-f022-45ad-abf1-79898339b334" />
+    </td>
+  </tr>
+</table>
+
 
 ## Features
 
