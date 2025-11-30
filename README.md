@@ -34,4 +34,4 @@ This website is a personal website inspired by old-internet-themed search engine
 ➥ error page when search result doesn't exist\
 ➥ 100% mobile compatible!!!
 
-..and a secret page when entering "secret" in the search bar?!
+..and a secret page when entering "secret" in the search bar >:D
