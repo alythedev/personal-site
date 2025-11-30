@@ -31,6 +31,7 @@ This website is a personal website inspired by old-internet-themed search engine
 ➥ certain pages are themed as old internet pop-ups\
 ➥ background of about page turns into a sky with clouds and a forest landscape as you scroll down\
 ➥ home and projects pages feature a "dvd mode"\
+➥ error page when search result doesn't exist\
 ➥ 100% mobile compatible!!!
 
 ..and a secret page when entering "secret" in the search bar?!
