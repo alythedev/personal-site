@@ -11,7 +11,7 @@ const pages = {
   "projects": "projects.html",
   "gallery": "gallery.html",
   "blog": "blog.html",
-  "secret": "/personal-site/popup-pages/secret.html"
+  "secret": "/popup-pages/secret.html"
 };
 
 // Show filtered suggestions
@@ -58,7 +58,7 @@ document.addEventListener('click', (e) => {
 // Navigate to page when clicking Search button
 searchBtn.addEventListener('click', () => {
   const query = searchInput.value;
-  const page = pages[query.toLowerCase()] || "/personal-site/popup-pages/notfound.html";
+  const page = pages[query.toLowerCase()] || "/popup-pages/notfound.html";
   window.location.href = page;
 });
 
@@ -67,7 +67,7 @@ searchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     e.preventDefault();
     const query = searchInput.value;
-    const page = pages[query.toLowerCase()] || "/personal-site/popup-pages/notfound.html";
+    const page = pages[query.toLowerCase()] || "/popup-pages/notfound.html";
     window.location.href = page;
   }
 });
