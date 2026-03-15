@@ -3,14 +3,14 @@ const suggestionsList = document.getElementById('suggestions');
 const searchBtn = document.getElementById('search-btn');
 
 // List of suggestions
-const suggestions = ["about", "projects", "gallery", "blog"];
+const suggestions = ["about", "projects", "gallery", "journal"];
 
 // Map search queries to HTML pages
 const pages = {
   "about": "about.html",
   "projects": "projects.html",
   "gallery": "gallery.html",
-  "blog": "blog.html",
+  "journal": "/personal-site/popup-pages/journalredirect.html",
   "secret": "/personal-site/popup-pages/secret.html"
 };
 
