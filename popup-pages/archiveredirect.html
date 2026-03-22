@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aly.kotb</title>
+    <link rel="stylesheet" href="../styling/popups.css">
+    <link rel="shortcut icon" href="https://cdn.hackclub.com/019cf0ff-fb31-7745-bd98-325ebe11b0dd/untitled_design_-_2026-03-15t141618.948.png" />
+</head>
+<body>
+    <div class="popup">
+        <div class="top-bar">
+            <div class="title-bar-text">redirect.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" class="close-button">x</button>
+            </div>
+        </div>
+
+        <div class="popup-content">
+            <div class="text-container">
+                <img src="../images/!-icon.png" class="icon" width="100px" draggable="false">
+                <p class="text">You are being redirected.<br><br>Are you sure you want to continue to <b><i>Aly's Archive</i></b>?
+                    <br><br>
+                </p>
+            </div>
+
+            <div class="button-group">
+                <a href="../index.html">
+                    <button class="button focused">No</button>
+                </a>
+
+                <button class="button focused" onclick="redirectJournal()">Yes</button>
+            </div>
+
+            <script>
+                function redirectJournal() {
+                    window.open("https://archive.alykotb.dev", "_blank");
+                    window.location.href = "../index.html";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
